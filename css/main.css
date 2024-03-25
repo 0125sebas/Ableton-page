@@ -1,0 +1,200 @@
+:root {
+    --grey: #F0F0F0;
+    --black: #040D12;
+    --navy: #213555;
+    --orange: #F6B17A;
+    --blue: #4F709C;
+    --yellow: #E5D283;
+    --teal: #52D3D8;
+    --purple: #614BC3;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: var(--grey);
+}
+
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+/* menu styles for mobile */
+
+.nav-mobile {
+    display: none; 
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid var(--black);
+}
+
+#nav-mobile__menu--open {
+    display: none;
+}
+
+.nav-mobile__div--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    height: auto;
+}
+
+
+.nav-mobile__brand--container {
+    width: auto;
+    height: auto;
+}
+
+.nav-mobile__menu--container {
+    width: auto;
+    height: auto;
+}
+
+#nav-mobile__brand--image {
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+}
+
+#nav-mobile__menu--menu {
+    cursor: pointer;
+}
+
+#nav-mobile__menu--open {
+    cursor: pointer;
+}
+
+/* dropdown menu */
+
+#dropdown-menu {
+    background-color: var(--blue);
+    width: 100%;
+    height: auto;
+    display: none;
+    position: absolute;
+    top: 50px;
+}
+
+#dropdown-menu__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.dropdown-menu__link {
+    color: var(--black);
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.dropdown-menu__link:active {
+    background-color: var(--navy);
+    color: var(--grey);
+}
+
+/* menu styles for desktop */
+
+.nav-desktop {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid var(--black);
+}
+
+.nav-desktop__ul {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-desktop__brand--container {
+    width: 4rem;
+}
+
+#nav-desktop__brand--image {
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav-desktop__link {
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+.nav-desktop__link--blue {
+    font-size: 1.2rem;
+    color: var(--blue);
+}
+
+.nav-desktop__link--orange {
+    font-size: 1.2rem;
+    color: var(--orange);
+}
+
+/* responsive design */
+
+@media (hover: hover) {
+    .dropdown-menu__link:hover {
+        background-color: var(--navy);
+        color: var(--grey);
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .nav-mobile {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-desktop {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
