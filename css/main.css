@@ -16,7 +16,7 @@
 body {
     box-sizing: border-box;
     margin: 0;
-    background-color: var(--grey);
+    background-color: white;
 }
 
 
@@ -42,7 +42,8 @@ a {
     justify-content: center;
     width: 100%;
     height: auto;
-    border-bottom: 2px solid var(--black);
+    border-bottom: 3px solid var(--grey);
+    background-color: var(--grey);
 }
 
 #nav-mobile__menu--open {
@@ -86,12 +87,13 @@ a {
 /* dropdown menu */
 
 #dropdown-menu {
-    background-color: var(--blue);
+    background-color: var(--grey);
     width: 100%;
     height: auto;
     display: none;
     position: absolute;
     top: 50px;
+    border-bottom: 1px solid var(--grey);
 }
 
 #dropdown-menu__container {
@@ -122,6 +124,7 @@ a {
     justify-content: space-around;
     align-items: center;
     border-bottom: 2px solid var(--black);
+    background-color: var(--grey);
 }
 
 .nav-desktop__ul {
@@ -154,6 +157,41 @@ a {
 .nav-desktop__link--orange {
     font-size: 1.2rem;
     color: var(--orange);
+}
+
+/* hero section styles */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-section__ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.hero-section__link {
+    color: var(--black);
+    font-weight: 600;
+}
+
+.hero-section__link--orange {
+    color: var(--orange);
+    font-weight: 600;
+}
+
+.hero-section__image {
+    width: 100%;
+    height: auto;
 }
 
 /* responsive design */
