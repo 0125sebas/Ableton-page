@@ -1,21 +1,15 @@
 const dropdownMenu = document.getElementById('dropdown-menu');
-const menu = document.getElementById('nav-mobile__menu--menu');
-const menuOpen = document.getElementById('nav-mobile__menu--open');
+const showMenu = document.getElementById('menu-show');
+const closeMenu = document.getElementById('menu-close');
 
-// when the menu is not open
-menu.addEventListener('click', function () {
-
-    menu.style.display = 'none';
-    menuOpen.style.display = 'flex';
+showMenu.addEventListener('click', function () {
     dropdownMenu.style.display = 'flex';
-
+    showMenu.style.display = 'none';
+    closeMenu.style.display = 'flex';
 });
 
-// when the menu is open
-menuOpen.addEventListener('click', function () {
-
-    menuOpen.style.display = 'none';
-    menu.style.display = 'flex';
+closeMenu.addEventListener('click', function () {
     dropdownMenu.style.display = 'none';
-
+    closeMenu.style.display = 'none';
+    showMenu.style.display = 'flex';
 });

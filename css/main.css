@@ -46,7 +46,12 @@ a {
     background-color: var(--grey);
 }
 
-#nav-mobile__menu--open {
+.nav-mobile__menu {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#menu-close {
     display: none;
 }
 
@@ -159,40 +164,8 @@ a {
     color: var(--orange);
 }
 
-/* hero section styles */
 
-.hero-section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    max-width: 1200px;
-    margin: auto;
-}
 
-.hero-section__ul {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    padding: 0 1rem;
-}
-
-.hero-section__link {
-    color: var(--black);
-    font-weight: 600;
-}
-
-.hero-section__link--orange {
-    color: var(--orange);
-    font-weight: 600;
-}
-
-.hero-section__image {
-    width: 100%;
-    height: auto;
-}
 
 /* responsive design */
 
