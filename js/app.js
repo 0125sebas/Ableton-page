@@ -1,15 +1,16 @@
-const dropdownMenu = document.getElementById('dropdown-menu');
-const showMenu = document.getElementById('menu-show');
-const closeMenu = document.getElementById('menu-close');
+const dropdownMenu = document.getElementById('dropdownMenu');
+const showMenu = document.getElementById('span--showMenu');
+const closeMenu = document.getElementById('span--closeMenu');
 
 showMenu.addEventListener('click', function () {
-    dropdownMenu.style.display = 'flex';
     showMenu.style.display = 'none';
-    closeMenu.style.display = 'flex';
+    closeMenu.style.display = 'block';
+    dropdownMenu.style.display = 'flex';
 });
 
 closeMenu.addEventListener('click', function () {
-    dropdownMenu.style.display = 'none';
     closeMenu.style.display = 'none';
-    showMenu.style.display = 'flex';
+    showMenu.style.display = 'block';
+    dropdownMenu.style.display = 'none';
 });
+
