@@ -1,12 +1,11 @@
 :root {
     --grey: #F0F0F0;
     --black: #040D12;
-    --navy: #213555;
     --orange: #ff764d;
     --blue: #0000ff;
-    --yellow: #E5D283;
-    --teal: #52D3D8;
-    --purple: #614BC3;
+    --yellow: #fbffa7;
+    --green: #b6ffc0;
+    --purple: #d5b3ff;
 }
 
 * {
@@ -38,7 +37,6 @@ a {
 
 img {
     display: block;
-    /* width: 100%; */
 }
 
 /* menu styles for mobile */
