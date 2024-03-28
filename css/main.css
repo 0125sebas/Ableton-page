@@ -15,11 +15,12 @@
 
 body {
     margin: 0;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 main {
     margin-top: 4rem;
+    width: 100%;
 }
 
 li {
@@ -138,11 +139,39 @@ img {
 }
 
 .link--orange {
-    color: var(--orange);
+    color: var(--orange) !important;
 }
 
 .link--blue {
-    color: var(--blue);
+    color: var(--blue) !important;
+}
+
+/* main section styles */
+
+.section {
+    width: 100%;
+    margin: auto;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__ul {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.section__link {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0 0.8rem;
+    color: var(--black);
+}
+
+.section__img--header {
+    width: 100%;
 }
 
 /* responsive design */
