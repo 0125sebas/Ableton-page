@@ -129,7 +129,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .nav__link {
@@ -151,7 +151,7 @@ img {
 .section {
     width: 100%;
     margin: auto;
-    max-width: 1100px;
+    max-width: 1150px;
     display: flex;
     flex-direction: column;
 }
@@ -183,14 +183,14 @@ img {
     }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1150px) {
     .nav__nav--desktop {
         display: flex;
     }
 
 }
 
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 1149px) {
     .nav__nav--mobile {
         display: flex;
     }
