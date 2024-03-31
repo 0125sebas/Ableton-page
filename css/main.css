@@ -264,9 +264,6 @@ video {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* display: grid;
-    grid-template-columns: 1 1fr;
-    grid-template-rows: 2 1fr; */
 }
 
 .section__div--img-container {
