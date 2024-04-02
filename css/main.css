@@ -391,6 +391,7 @@ video {
 
 .img--brand {
     width: 5em;
+    cursor: pointer;
 }
 
 /* 
