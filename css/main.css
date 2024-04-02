@@ -94,7 +94,7 @@ video {
     width: 100%;
 }
 
-/* dropdown menu */
+/* dropdown menu styles*/
 
 .dropdownMenu {
     width: 100%;
@@ -152,7 +152,7 @@ video {
 }
 
 /* main section styles */
-/* header section */
+
 .section {
     width: 90%;
     margin: auto;
@@ -180,8 +180,6 @@ video {
 .section__img--header {
     width: 100%;
 }
-
-/* section 2 */
 
 .section__title {
     font-size: 0.7em;
@@ -217,15 +215,11 @@ video {
     padding: 1em;
 }
 
-/* section 3 */
-
 .section__cite {
     width: 100%;
     font-size: 0.6em;
     font-weight: 600;
 }
-
-/* section 4 */
 
 .div--bg-green {
     flex-wrap: wrap;
@@ -239,13 +233,9 @@ video {
     margin: 1em;    
 }
 
-/* section 5 */
-
 .section__img--bg-none {
     width: 100%;
 }
-
-/* section 6 */
 
 .div--bg-purple {
     justify-content: center;
@@ -258,10 +248,9 @@ video {
     margin: 1em;
 }
 
-/* section 7 */
-
 .section__div--info {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -309,6 +298,7 @@ video {
 .div--contact {
     grid-template-columns: auto;
     grid-template-rows: 1fr auto;
+    gap: 1.5em;
 }
 
 .footer__section {
@@ -346,7 +336,7 @@ video {
     outline: none;
     border: none;
     background-color: var(--grey);
-
+    
 }
 
 .footer__input--submit {
@@ -403,10 +393,16 @@ video {
     width: 5em;
 }
 
+/* 
 
+responsive design:
 
+0px - 480px: smaller smartphones.
+481px - 768px: tablets and larger smartphones.
+769px - 1279px: laptops, larger tablets in landscape and small desktops.
+1280px+ : larger desktops and monitors.
 
-/* responsive design */
+*/
 
 @media (hover: hover) {
     .dropdownMenu__link:hover {
@@ -415,65 +411,81 @@ video {
     }
 }
 
-@media screen and (min-width: 800px) {
-    .section__title {
-        font-size: 1.2em;
-    }
-
-    .section__text {
-        font-size: 1em;
-    }
-
-    .section__a--bg-blue {
-        font-size: 1em;
-    }
+@media screen and (min-width: 600px) {
 
     .section__div--info {
         flex-direction: row;
         justify-content: center;
     }
 
+    .section__div--img-container {
+        width: 50%;
+    }
+
     .section__div--info-container {
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    .div--info {
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        gap: 3em;
-    }
-
-    /* TODO: add .div--contact styles here*/
-
-
-}
-
-@media screen and (min-width: 1024px) {
-
-    .div--info {
-        grid-template-columns: auto auto auto;
+        align-items: start;
     }
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 780px) {
+
+    .section__title {
+        font-size: 1em;
+    }
+
+    .section__text {
+        font-size: 0.8em;
+    }
+
+    .footer__h1 {
+        font-size: 4em;
+    }
+
+    .footer__section--title {
+        font-size: 2em;
+    }
+
+    .footer__link {
+        font-size: 1.5em;
+    }
+
+    .div--info {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .div--contact {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto;
+    }
+
+    .ul--contact {
+        display: flex;
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .nav__nav--mobile {
+        display: flex;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
     .nav__nav--desktop {
         display: flex;
     }
-
-    .div--info {
-        grid-template-columns: auto auto auto auto;
-    }
-
 }
 
-@media screen and (max-width: 1149px) {
-    .nav__nav--mobile {
-        display: flex;
-    }
-    
-}
+
+
+
+
+
 
 
 
