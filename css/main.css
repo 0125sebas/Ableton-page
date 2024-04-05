@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* CSS reset */
 :root {
     --grey: #F0F0F0;
     --black: #040D12;
@@ -9,36 +11,51 @@
     --purple: #d5b3ff;
 }
 
-* {
-    font-family: sans-serif;
-    box-sizing: border-box;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
     min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-    margin-top: 4rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+img, svg, video {
+    display: block;
     width: 100%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+p a {
+    display: inline;
 }
 
 li {
     list-style-type: none;
 }
 
-ul {
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    display: block;
-}
-
-img {
-    display: block;
+h1, h2, h3, h4, h5, h6, p, span, a {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
 }
 
 video {
